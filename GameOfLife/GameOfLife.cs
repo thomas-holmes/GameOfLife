@@ -23,16 +23,9 @@ namespace GameOfLife
 
         private ISet<Cell> GetDefaultState()
         {
-            var glider = new[] {
-                new Cell {X=1, Y=0},
-                new Cell {X=2, Y=1},
-                new Cell {X=0, Y=2},
-                new Cell {X=1, Y=2},
-                new Cell {X=2, Y=2},
-            };
-
-            return new HashSet<Cell>(glider);
+            return Patterns.Glider[0];
         }
+
         public int ViewportX { get; private set; }
         public int ViewportY { get; private set; }
 
