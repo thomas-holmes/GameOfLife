@@ -63,10 +63,6 @@ namespace GameOfLife
             }
             Cells = newCells;
         }
-        #region Cell Testing
-
-
-        #endregion
 
         #region Drawing
         public void DrawBoard()
