@@ -10,7 +10,6 @@ namespace GameOfLife
     {
         private long _generation = 0L;
 
-
         public GameOfLife(int viewportX, int viewportY, ISet<Cell> initialState=null)
         {
             ViewportX = viewportX;
@@ -67,7 +66,6 @@ namespace GameOfLife
         #region Drawing
         public void DrawBoard()
         {
-
             var sb = new StringBuilder();
             for (int y = 0; y < ViewportY; y++)
             {
